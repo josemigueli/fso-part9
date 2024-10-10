@@ -2,3 +2,5 @@
 .vscode
 example
 node_modules
+flights
+build
