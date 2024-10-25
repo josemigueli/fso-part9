@@ -55,12 +55,14 @@ const AddPatientForm = ({ onCancel, onSubmit }: Props) => {
           fullWidth 
           value={name}
           onChange={({ target }) => setName(target.value)}
+          sx={{ marginBottom: '1rem' }}
         />
         <TextField
           label="Social security number"
           fullWidth
           value={ssn}
           onChange={({ target }) => setSsn(target.value)}
+          sx={{ marginBottom: '1rem' }}
         />
         <TextField
           label="Date of birth"
@@ -68,12 +70,14 @@ const AddPatientForm = ({ onCancel, onSubmit }: Props) => {
           fullWidth
           value={dateOfBirth}
           onChange={({ target }) => setDateOfBirth(target.value)}
+          sx={{ marginBottom: '1rem' }}
         />
         <TextField
           label="Occupation"
           fullWidth
           value={occupation}
           onChange={({ target }) => setOccupation(target.value)}
+          sx={{ marginBottom: '1rem' }}
         />
 
         <InputLabel style={{ marginTop: 20 }}>Gender</InputLabel>
@@ -82,6 +86,7 @@ const AddPatientForm = ({ onCancel, onSubmit }: Props) => {
           fullWidth
           value={gender}
           onChange={onGenderChange}
+          sx={{ marginBottom: '1rem' }}
         >
         {genderOptions.map(option =>
           <MenuItem
@@ -93,10 +98,10 @@ const AddPatientForm = ({ onCancel, onSubmit }: Props) => {
         )}
         </Select>
 
-        <Grid>
+        <Grid sx={{ marginBottom: '2rem' }}>
           <Grid item>
             <Button
-              color="secondary"
+              color="error"
               variant="contained"
               style={{ float: "left" }}
               type="button"
@@ -112,6 +117,7 @@ const AddPatientForm = ({ onCancel, onSubmit }: Props) => {
               }}
               type="submit"
               variant="contained"
+              color="secondary"
             >
               Add
             </Button>
