@@ -1,0 +1,51 @@
+.entryForm {
+    padding: 2rem 2rem;
+    border: 1px solid var(--main-color);
+    border-radius: 0.75rem;
+}
+
+.visiAndWea {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+}
+
+.divEntryForm {
+  margin-bottom: 1.5rem;
+}
+
+.divRadio {
+    margin-bottom: 0.5rem;
+}
+
+.labelEntryForm {
+  display: flex;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.inputEntryForm {
+  background-color: #33332d;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d4fcb5;
+  border-radius: 0.5rem;
+}
+
+.inputEntryForm:focus-visible {
+  outline: 3px solid rgba(212, 252, 181, 0.3);
+}
+
+.buttonEntryForm {
+  padding: 0.5rem 1rem;
+  color: #33332d;
+  background-color: #d4fcb5;
+  border: 1px solid #d4fcb5;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 50%;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: #d4fcb5;
+}

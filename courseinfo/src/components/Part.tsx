@@ -6,6 +6,7 @@ import {
   CoursePartSpecial,
 } from '../types'
 import { assertNever } from '../utils'
+import style from './Global.module.css'
 
 interface PartProps {
   part: CoursePart
@@ -13,46 +14,38 @@ interface PartProps {
 
 const Part = ({ part }: PartProps) => {
   const coursePartBasic = (data: CoursePartBasic) => (
-    <div>
-      <b>
-        <p>
-          {data.name} {data.exerciseCount}
-        </p>
-      </b>
+    <div className={style.cardContainer}>
+      <h2 className={style.cardTitle}>
+        {data.name} - {data.exerciseCount} exercises
+      </h2>
       <p>{data.description}</p>
     </div>
   )
 
   const coursePartGroup = (data: CoursePartGroup) => (
-    <div>
-      <b>
-        <p>
-          {data.name} {data.exerciseCount}
-        </p>
-      </b>
+    <div className={style.cardContainer}>
+      <h2 className={style.cardTitle}>
+        {data.name} - {data.exerciseCount} exercises
+      </h2>
       <p>Project exercises {data.groupProjectCount}</p>
     </div>
   )
 
   const coursePartBackground = (data: CoursePartBackground) => (
-    <div>
-      <b>
-        <p>
-          {data.name} {data.exerciseCount}
-        </p>
-      </b>
+    <div className={style.cardContainer}>
+      <h2 className={style.cardTitle}>
+        {data.name} - {data.exerciseCount} exercises
+      </h2>
       <p>{data.description}</p>
       <p>{data.backgroundMaterial}</p>
     </div>
   )
 
   const coursePartSpecial = (data: CoursePartSpecial) => (
-    <div>
-      <b>
-        <p>
-          {data.name} {data.exerciseCount}
-        </p>
-      </b>
+    <div className={style.cardContainer}>
+      <h2 className={style.cardTitle}>
+        {data.name} - {data.exerciseCount} exercises
+      </h2>
       <p>{data.description}</p>
       <p>Required skills</p>
       <ul>

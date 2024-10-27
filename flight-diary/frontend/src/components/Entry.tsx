@@ -1,4 +1,5 @@
 import { EntryType } from '../types'
+import style from './Entry.module.css'
 
 interface DataProps {
   data: EntryType
@@ -6,11 +7,15 @@ interface DataProps {
 
 const Entry = ({ data }: DataProps) => {
   return (
-    <div>
-      <p>Date: {data.date}</p>
-      <p>Weather: {data.weather}</p>
-      <p>Visibility: {data.visibility}</p>
-      <p>Comment: {data.comment}</p>
+    <div className={style.cardContainer}>
+      <h3>Date</h3>
+      <p>{data.date}</p>
+      <h3>Weather</h3>
+      <p>{data.weather}</p>
+      <h3>Visibility</h3>
+      <p>{data.visibility}</p>
+      <h3>Comment</h3>
+      <p>{data.comment}</p>
     </div>
   )
 }

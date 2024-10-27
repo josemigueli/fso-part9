@@ -1,0 +1,26 @@
+:root {
+  --dark-color: #0f1214;
+  --body-color: #b6bec9;
+  --title-color: #f6f7f9;
+}
+
+html {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--dark-color);
+  color: var(--body-color);
+  font-family: "Montserrat", sans-serif;
+  padding: 0 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+}

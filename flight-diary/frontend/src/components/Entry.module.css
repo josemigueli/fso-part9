@@ -1,0 +1,25 @@
+:root {
+    --main-color: #d4fcb5;
+}
+
+.entriesContainer {
+    margin-bottom: 2rem;
+}
+
+.cardContainer {
+    padding: 1rem 2rem;
+    border: 1px solid var(--main-color);
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .cardContainer {
+        margin-bottom: 0;
+    }
+    .containerOfCards {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+    }
+}

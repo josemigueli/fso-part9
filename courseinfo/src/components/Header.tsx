@@ -1,11 +1,13 @@
+import style from './Global.module.css'
+
 interface HeaderProps {
-    name: string
+  name: string
 }
 
 const Header = (props: HeaderProps) => {
   return (
     <div>
-      <h1>{props.name}</h1>
+      <h1 className={style.title}>{props.name}</h1>
     </div>
   )
 }

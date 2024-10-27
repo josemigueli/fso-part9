@@ -3,6 +3,7 @@ import Entry from './Entry'
 import { getAllEntries } from '../services/entryService'
 import { EntryType } from '../types'
 import { useSetEntries, useEntriesValue } from '../functions'
+import style from './Entry.module.css'
 
 const Entries = () => {
   const entries = useEntriesValue()
@@ -19,11 +20,13 @@ const Entries = () => {
   }
 
   return (
-    <div>
+    <div className={style.entriesContainer}>
       <h2>All entries</h2>
-      {entries.map((e) => (
-        <Entry key={e.id} data={e} />
-      ))}
+      <div className={style.containerOfCards}>
+        {entries.map((e) => (
+          <Entry key={e.id} data={e} />
+        ))}
+      </div>
     </div>
   )
 }

@@ -1,0 +1,16 @@
+:root {
+    --bg-main-color: #33332d;
+    --white: #fff;
+}
+
+html {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--bg-main-color);
+    color: var(--white);
+    font-family: "Poppins", sans-serif;
+    margin: 0 1rem;
+}

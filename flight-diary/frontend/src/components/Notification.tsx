@@ -1,22 +1,24 @@
 import { useNotificationValue } from '../functions'
-// import Toast from 'react-bootstrap/Toast'
-// import ToastContainer from 'react-bootstrap/ToastContainer'
-
-// const ShowToast = ({ header, message, type }) => {
-//   return (
-//     <ToastContainer className='p-3' position='top-center' style={{ zIndex: 1 }}>
-//       <Toast bg={type}>
-//         <Toast.Header closeButton={false}>
-//           <strong className='me-auto'>{header}</strong>
-//         </Toast.Header>
-//         <Toast.Body className='text-white'>{message}</Toast.Body>
-//       </Toast>
-//     </ToastContainer>
-//   )
-// }
+import style from './Notification.module.css'
 
 const Notification = () => {
   const notification = useNotificationValue()
+
+  const toast = (message: string, type: string) => {
+    return (
+      <div className={style.toastContainer}>
+        <div
+          className={
+            type === 'ERROR'
+              ? `${style.toastSubContainer} ${style.toastError}`
+              : `${style.toastSubContainer} ${style.toastSuccess}`
+          }
+        >
+          <p>{message}</p>
+        </div>
+      </div>
+    )
+  }
 
   if (!notification) {
     return null
@@ -24,25 +26,7 @@ const Notification = () => {
 
   return (
     <div className='notification-container'>
-      {notification.type === 'ERROR' ? (
-        <div>
-            <p>{notification.payload}</p>
-        </div>
-        // <ShowToast
-        //   header='Error!'
-        //   message={notification.message}
-        //   type='danger'
-        // />
-      ) : (
-        <div>
-            <p>{notification.payload}</p>
-        </div>
-        // <ShowToast
-        //   header='Done!'
-        //   message={notification.message}
-        //   type='success'
-        // />
-      )}
+      {toast(notification.payload, notification.type)}
     </div>
   )
 }
