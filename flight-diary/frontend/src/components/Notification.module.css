@@ -1,22 +1,53 @@
+@keyframes fall-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes rise-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%) scale(0.8);
+  }
+}
+
+.notiContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+}
+
 .toastContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
 }
 
 .toastSubContainer {
   max-width: 300px;
   padding: 0 1rem;
-  background-color: #33332d;
+  background-color: var(--main-blue);
   border-radius: 0.5rem;
   position: fixed;
+  background-color: var(--secondary-text);
+  color: var(--black);
 }
 
-.toastSuccess {
-  border: 1px solid #d4fcb5;
+.animateFallIn {
+  animation: fall-in 0.4s ease-out forwards;
 }
 
-.toastError {
-  border: 1px solid #fc2626;
+.animateFallOut {
+  animation: rise-out 0.4s ease-in forwards;
 }

@@ -1,16 +1,24 @@
 :root {
-    --bg-main-color: #33332d;
-    --white: #fff;
+  --white: #fff;
+  --black: #000;
+  --red: #82181a;
+  --black-transparency: rgba(0, 0, 0, 0.5);
+  --bg-blue: #101828;
+  --main-blue: #030712;
+  --border: #364153;
+  --secondary-text: #99a1af;
+  --light-grey: rgba(209, 213, 220, 0.3);
+  --main-green: #096;
 }
 
 html {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 body {
-    background-color: var(--bg-main-color);
-    color: var(--white);
-    font-family: "Poppins", sans-serif;
-    margin: 0 1rem;
+  background-color: var(--bg-blue);
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  margin: 0 1rem;
 }
