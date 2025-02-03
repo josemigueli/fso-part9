@@ -3,6 +3,7 @@
 This project is a full-stack application built with **Express.js** for the backend and **React** with **TypeScript** for the frontend. It serves as a patient management system where healthcare professionals can view patient information, add new patients, and log medical entries. The project is part of the Full Stack Open course (Part 9).
 
 ## Table of Contents
+
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -10,9 +11,11 @@ This project is a full-stack application built with **Express.js** for the backe
 - [Frontend](#frontend)
 - [Scripts](#scripts)
 - [Dependencies](#dependencies)
+- [Galery](#galery)
 - [License](#license)
 
 ## Features
+
 - **Backend**:
   - REST API for managing patient and diagnosis data.
   - Endpoints for fetching patients, diagnoses, and adding new patients or entries.
@@ -27,12 +30,14 @@ This project is a full-stack application built with **Express.js** for the backe
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/josemigueli/fso-part9.git
    cd fso-part9/patientor
    ```
 
 2. Install dependencies for both backend and frontend:
+
    ```bash
    cd backend
    npm install
@@ -41,12 +46,14 @@ This project is a full-stack application built with **Express.js** for the backe
    ```
 
 3. Start the backend server:
+
    ```bash
    cd ../backend
    npm run dev
    ```
 
 4. Start the frontend development server:
+
    ```bash
    cd ../frontend
    npm start
@@ -57,7 +64,9 @@ This project is a full-stack application built with **Express.js** for the backe
 ## Usage
 
 ### Backend
+
 The backend server runs on port `3001` and provides the following endpoints:
+
 - **GET /api/ping**: A test endpoint that returns "pong".
 - **GET /api/diagnoses**: Fetches all diagnoses.
 - **GET /api/patients**: Fetches all patients (without sensitive information like SSN).
@@ -84,7 +93,9 @@ The backend server runs on port `3001` and provides the following endpoints:
   ```
 
 ### Frontend
+
 The frontend provides the following features:
+
 - **Patient List**: Displays a list of all patients with their name, gender, occupation, and health rating.
 - **Add New Patient**: A form to add a new patient with fields for name, SSN, date of birth, occupation, and gender.
 - **Patient Details**: Displays detailed information about a patient, including their medical entries.
@@ -93,11 +104,13 @@ The frontend provides the following features:
 ## Scripts
 
 ### Backend
+
 - `npm run dev`: Starts the backend server in development mode.
 - `npm run lint`: Runs ESLint to check for code style issues.
 - `npm start`: Starts the backend server in production mode.
 
 ### Frontend
+
 - `npm start`: Starts the frontend development server.
 - `npm run build`: Builds the frontend for production.
 - `npm run lint`: Runs ESLint to check for code style issues.
@@ -105,12 +118,33 @@ The frontend provides the following features:
 ## Dependencies
 
 ### Backend
+
 - **Runtime**: `express`, `cors`, `uuid`, `zod`
 - **Development**: `@types/express`, `@types/cors`, `ts-node-dev`, `typescript`, `eslint`
 
 ### Frontend
+
 - **Runtime**: `react`, `react-dom`, `axios`, `react-router-dom`, `@mui/material`
 - **Development**: `@types/react`, `@types/react-dom`, `typescript`, `eslint`
 
+## Galery
+
+### Home View
+
+![Home view](frontend/public/home.png)
+
+### Patient View
+
+![Patient view](frontend/public/patient.png)
+
+### Add Entry Form
+
+![Add entry form](frontend/public/add-entry-form.png)
+
+### Add Patient Form
+
+![Add patient form](frontend/public/add-patient-form.png)
+
 ## License
+
 This project is licensed under the ISC License.

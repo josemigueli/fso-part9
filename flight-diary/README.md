@@ -3,6 +3,7 @@
 This project is a full-stack application built with **Express.js** for the backend and **React** with **TypeScript** for the frontend. It allows users to log and view flight diary entries, including details such as date, weather, visibility, and comments. The project is part of the Full Stack Open course (Part 9).
 
 ## Table of Contents
+
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -10,9 +11,11 @@ This project is a full-stack application built with **Express.js** for the backe
 - [Frontend](#frontend)
 - [Scripts](#scripts)
 - [Dependencies](#dependencies)
+- [Galery](#galery)
 - [License](#license)
 
 ## Features
+
 - **Backend**:
   - REST API for managing flight diary entries.
   - Endpoints for fetching all entries, fetching a single entry by ID, and adding a new entry.
@@ -26,12 +29,14 @@ This project is a full-stack application built with **Express.js** for the backe
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/josemigueli/fso-part9.git
    cd fso-part9/flight-diary
    ```
 
 2. Install dependencies for both backend and frontend:
+
    ```bash
    cd backend
    npm install
@@ -40,12 +45,14 @@ This project is a full-stack application built with **Express.js** for the backe
    ```
 
 3. Start the backend server:
+
    ```bash
    cd ../backend
    npm run dev
    ```
 
 4. Start the frontend development server:
+
    ```bash
    cd ../frontend
    npm start
@@ -56,7 +63,9 @@ This project is a full-stack application built with **Express.js** for the backe
 ## Usage
 
 ### Backend
+
 The backend server runs on port `3000` and provides the following endpoints:
+
 - **GET /ping**: A test endpoint that returns "pong".
 - **GET /api/diaries**: Fetches all flight diary entries.
 - **GET /api/diaries/:id**: Fetches a single diary entry by ID.
@@ -71,7 +80,9 @@ The backend server runs on port `3000` and provides the following endpoints:
   ```
 
 ### Frontend
+
 The frontend provides the following features:
+
 - **Header**: Displays the title of the app.
 - **Add New Entry**: A form to add a new flight diary entry with fields for date, weather, visibility, and comment.
 - **All Entries**: Displays a list of all diary entries with details such as date, weather, visibility, and comment.
@@ -80,11 +91,13 @@ The frontend provides the following features:
 ## Scripts
 
 ### Backend
+
 - `npm run dev`: Starts the backend server in development mode.
 - `npm run lint`: Runs ESLint to check for code style issues.
 - `npm start`: Starts the backend server in production mode.
 
 ### Frontend
+
 - `npm start`: Starts the frontend development server.
 - `npm run build`: Builds the frontend for production.
 - `npm run lint`: Runs ESLint to check for code style issues.
@@ -92,12 +105,25 @@ The frontend provides the following features:
 ## Dependencies
 
 ### Backend
+
 - **Runtime**: `express`, `cors`
 - **Development**: `@types/express`, `@types/cors`, `ts-node-dev`, `typescript`, `eslint`
 
 ### Frontend
+
 - **Runtime**: `react`, `react-dom`, `axios`
 - **Development**: `@types/react`, `@types/react-dom`, `typescript`, `eslint`
 
+## Galery
+
+### Entries View
+
+![Entries view](frontend/public/entries.png)
+
+### Add Entry View
+
+![Add entry view](frontend/public/add-entry.png)
+
 ## License
+
 This project is licensed under the ISC License.
