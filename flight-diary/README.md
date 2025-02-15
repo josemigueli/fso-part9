@@ -11,7 +11,7 @@ This project is a full-stack application built with **Express.js** for the backe
 - [Frontend](#frontend)
 - [Scripts](#scripts)
 - [Dependencies](#dependencies)
-- [Galery](#galery)
+- [Gallery](#gallery)
 - [License](#license)
 
 ## Features
@@ -55,10 +55,10 @@ This project is a full-stack application built with **Express.js** for the backe
 
    ```bash
    cd ../frontend
-   npm start
+   npm run dev
    ```
 
-5. Open the app in your browser at `http://localhost:3000`.
+5. Open the app in your browser at `http://localhost:5173`.
 
 ## Usage
 
@@ -114,7 +114,7 @@ The frontend provides the following features:
 - **Runtime**: `react`, `react-dom`, `axios`
 - **Development**: `@types/react`, `@types/react-dom`, `typescript`, `eslint`
 
-## Galery
+## Gallery
 
 ### Entries View
 

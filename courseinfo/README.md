@@ -9,7 +9,7 @@ This project is a React application built with TypeScript as part of the Full St
 - [Usage](#usage)
 - [Scripts](#scripts)
 - [Dependencies](#dependencies)
-- [Galery](#galery)
+- [Gallery](#gallery)
 - [License](#license)
 
 ## Features
@@ -67,7 +67,7 @@ The total number of exercises is calculated and displayed at the bottom of the p
 - **Runtime**: `react`, `react-dom`
 - **Development**: `@types/react`, `@types/react-dom`, `vite`, `typescript`, `eslint`
 
-## Galery
+## Gallery
 
 ### Home View
 
